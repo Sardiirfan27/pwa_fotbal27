@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Detail Team Laliga</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Detail Team PWA Sardi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/image/laligaico.ico" rel="shortcut icon">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#"  class="center brand-logo" >Fútbol Apps</a>
+            <a href="javascrit:void(0)" onclick="javascript:window.history.back(-1);return false;" data-target="nav-mobile">
+                <i class="material-icons">arrow_back</i>
+            </a>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+    <!-- <div id="detailshow"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-content grey darken-4 white-text">
+                        <div class="center-align">
+                            <img id="logoClubALL" alt="logo" width="120" height="120" vspace="20">
+                            <h5 class="font2-bold" id="namaClubALL"></h5>
+                            <div id="venueClubALL"></div>
+                        </div>
+                    </div>
+                        <div class="card-content">
+                            <div id="detail_club">
+                                <div class="entry">
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Name</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="nameALL"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Short Name</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="namaPendek"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Tla</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="TLAclub"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Founded</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="foundedClubALL"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Venue</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="venue1ClubALL"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Address</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="alamatClub"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Website</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="webClubALL"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Email</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="mailClubALL"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Phone</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="phoneClubALL"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Club Colors</p>
+                                        </div>
+                                        <div class="col s1">
+                                            :
+                                        </div>
+                                        <div class="col s5">
+                                            <div id="colorsClubALL"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-panel">
+                            <div class="center-align">
+                                <h4 class="font2-bold">Daftar Squad</h4>
+                                <hr>
+                            </div>
+                            <div id="dftrSquad"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="js/materialize.js"></script>
+    <script src="js/idb.js"></script>
+    <script type="module" src="js/detail_module.js"></script>
+    
+    
+</body>
+
+</html>

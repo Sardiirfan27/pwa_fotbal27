@@ -1,0 +1,41 @@
+<center><h3 class="collection-header">Team</h3><hr></center>
+<div  id="dftrTeam">
+    <div class="center-align" id="preloader">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var isFromSaved = urlParams.get("team_favorit");
+var save = document.getElementById("teamFavku");
+
+if (isFromSaved) {
+// Hide fab jika dimuat dari indexed db
+save.style.display = 'none';
+  
+// ambil artikel lalu tampilkan
+dftrTeamFavorit();
+} else {
+  var item = getDetailTeamById();
+}
+
+save.onclick = function() {
+  console.log("Tombol FAB di klik.");
+  item.then(function(article) {
+    saveTeam(article);
+  });
+};
+
+</script>
